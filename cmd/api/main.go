@@ -13,7 +13,6 @@ const webPort = "8185"
 type Config struct{}
 
 func main() {
-	// app := Config{}
 	log.Printf("Starting api service on port %s\n", webPort)
 
 	go service.ConsumeMessages()
